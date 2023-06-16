@@ -17,11 +17,11 @@ import {
     ProgramBuildInfo,
     SymlinkCache,
     ThisContainer,
-} from "./_namespaces/ts";
+} from     "./_namespaces/ts";
 
 // branded string type used to store absolute, normalized and canonicalized paths
 // arbitrary file name can be converted to Path via toPath function
-export type Path = string & { __pathBrand: any };
+export type Path = string  & { __pathBrand: any };
 
 /** @internal */
 export type MatchingKeys<TRecord, TMatch, K extends keyof TRecord = keyof TRecord> = K extends (TRecord[K] extends TMatch ? K : never) ? K : never;
